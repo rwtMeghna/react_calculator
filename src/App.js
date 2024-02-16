@@ -45,10 +45,10 @@ function App() {
         <button onClick={() => handleInput('3')}>3</button>
         <button onClick={() => handleInput('*')}>*</button>
         <div div className="rows">
-        <button onClick={() => handleInput('0')}>0</button>
-        <button onClick={() => handleInput('/')}>/</button>
-        <button onClick={calculateResult}>=</button>
         <button onClick={clearInput}>C</button>
+        <button onClick={() => handleInput('0')}>0</button>
+        <button onClick={calculateResult}>=</button>
+        <button onClick={() => handleInput('/')}>/</button>
         </div>
       </div>
       {/* {result && <div className="result">{result}</div>} */}
