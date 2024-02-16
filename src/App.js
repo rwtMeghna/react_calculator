@@ -13,8 +13,21 @@ function App() {
     setResult('');
   };
 
+  // const calculateResult = () => {
+  //   try {
+  //     const calculatedResult = eval(input);
+  //     setResult(calculatedResult);
+  //   } catch (error) {
+  //     setResult('Error');
+  //   }
+  // };
   const calculateResult = () => {
     try {
+      if (!input.trim()) {
+        setResult('Error');
+        return;
+      }
+
       const calculatedResult = eval(input);
       setResult(calculatedResult);
     } catch (error) {
